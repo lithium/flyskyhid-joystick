@@ -13,6 +13,7 @@
 		12A3127D1734CDAF008E8366 /* FlySkyJoystickUserClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12A3127C1734CDAF008E8366 /* FlySkyJoystickUserClient.cpp */; };
 		12A312801734D520008E8366 /* FlySkyJoystickDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A3127F1734D520008E8366 /* FlySkyJoystickDevice.h */; };
 		12A312831734D922008E8366 /* FlySkyJoystickDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12A312821734D922008E8366 /* FlySkyJoystickDevice.cpp */; };
+		12A312861734DF7B008E8366 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A312851734DF7B008E8366 /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		12A3127F1734D520008E8366 /* FlySkyJoystickDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlySkyJoystickDevice.h; sourceTree = "<group>"; };
 		12A312811734D568008E8366 /* flyskyjoy_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flyskyjoy_config.h; sourceTree = "<group>"; };
 		12A312821734D922008E8366 /* FlySkyJoystickDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FlySkyJoystickDevice.cpp; sourceTree = "<group>"; };
+		12A312851734DF7B008E8366 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12A312861734DF7B008E8366 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +73,7 @@
 		12A3123B1734C288008E8366 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				12A312851734DF7B008E8366 /* IOKit.framework */,
 				12A3123C1734C288008E8366 /* Kernel.framework */,
 			);
 			name = "Other Frameworks";

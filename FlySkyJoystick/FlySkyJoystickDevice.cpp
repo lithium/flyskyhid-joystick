@@ -142,7 +142,7 @@ IOReturn FlySkyJoystickDevice::newReportDescriptor(IOMemoryDescriptor **descript
 
 OSString *FlySkyJoystickDevice::newManufacturerString() const
 {
-    return OSString::withCString("Alxn1");
+    return OSString::withCString("Hlidskialf");
 }
 
 OSString *FlySkyJoystickDevice::newProductString() const
