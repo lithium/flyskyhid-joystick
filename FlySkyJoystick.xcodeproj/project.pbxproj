@@ -9,16 +9,26 @@
 /* Begin PBXBuildFile section */
 		12A312421734C288008E8366 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12A312401734C288008E8366 /* InfoPlist.strings */; };
 		12A312451734C288008E8366 /* FlySkyJoystick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12A312441734C288008E8366 /* FlySkyJoystick.cpp */; };
+		12A3127B1734CD24008E8366 /* FlySkyJoystickUserClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A3127A1734CD24008E8366 /* FlySkyJoystickUserClient.h */; };
+		12A3127D1734CDAF008E8366 /* FlySkyJoystickUserClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12A3127C1734CDAF008E8366 /* FlySkyJoystickUserClient.cpp */; };
+		12A312801734D520008E8366 /* FlySkyJoystickDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A3127F1734D520008E8366 /* FlySkyJoystickDevice.h */; };
+		12A312831734D922008E8366 /* FlySkyJoystickDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12A312821734D922008E8366 /* FlySkyJoystickDevice.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12A312381734C288008E8366 /* FlySkyJoystick.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlySkyJoystick.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A3123C1734C288008E8366 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
-		12A3123F1734C288008E8366 /* FlySkyJoystick-Info.plist */ = {isa = PBXFileReference; path = "FlySkyJoystick-Info.plist"; sourceTree = "<group>"; };
+		12A3123F1734C288008E8366 /* FlySkyJoystick-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlySkyJoystick-Info.plist"; sourceTree = "<group>"; };
 		12A312411734C288008E8366 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		12A312431734C288008E8366 /* FlySkyJoystick.h */ = {isa = PBXFileReference; path = FlySkyJoystick.h; sourceTree = "<group>"; };
+		12A312431734C288008E8366 /* FlySkyJoystick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlySkyJoystick.h; sourceTree = "<group>"; };
 		12A312441734C288008E8366 /* FlySkyJoystick.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FlySkyJoystick.cpp; sourceTree = "<group>"; };
-		12A312461734C288008E8366 /* FlySkyJoystick-Prefix.pch */ = {isa = PBXFileReference; path = "FlySkyJoystick-Prefix.pch"; sourceTree = "<group>"; };
+		12A312461734C288008E8366 /* FlySkyJoystick-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlySkyJoystick-Prefix.pch"; sourceTree = "<group>"; };
+		12A3127A1734CD24008E8366 /* FlySkyJoystickUserClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlySkyJoystickUserClient.h; sourceTree = "<group>"; };
+		12A3127C1734CDAF008E8366 /* FlySkyJoystickUserClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FlySkyJoystickUserClient.cpp; sourceTree = "<group>"; };
+		12A3127E1734CFED008E8366 /* flyskyjoy_debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flyskyjoy_debug.h; sourceTree = "<group>"; };
+		12A3127F1734D520008E8366 /* FlySkyJoystickDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlySkyJoystickDevice.h; sourceTree = "<group>"; };
+		12A312811734D568008E8366 /* flyskyjoy_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flyskyjoy_config.h; sourceTree = "<group>"; };
+		12A312821734D922008E8366 /* FlySkyJoystickDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FlySkyJoystickDevice.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +80,12 @@
 			children = (
 				12A312431734C288008E8366 /* FlySkyJoystick.h */,
 				12A312441734C288008E8366 /* FlySkyJoystick.cpp */,
+				12A3127A1734CD24008E8366 /* FlySkyJoystickUserClient.h */,
+				12A3127C1734CDAF008E8366 /* FlySkyJoystickUserClient.cpp */,
+				12A3127F1734D520008E8366 /* FlySkyJoystickDevice.h */,
+				12A312821734D922008E8366 /* FlySkyJoystickDevice.cpp */,
+				12A3127E1734CFED008E8366 /* flyskyjoy_debug.h */,
+				12A312811734D568008E8366 /* flyskyjoy_config.h */,
 				12A3123E1734C288008E8366 /* Supporting Files */,
 			);
 			path = FlySkyJoystick;
@@ -92,6 +108,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12A3127B1734CD24008E8366 /* FlySkyJoystickUserClient.h in Headers */,
+				12A312801734D520008E8366 /* FlySkyJoystickDevice.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +187,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				12A312451734C288008E8366 /* FlySkyJoystick.cpp in Sources */,
+				12A3127D1734CDAF008E8366 /* FlySkyJoystickUserClient.cpp in Sources */,
+				12A312831734D922008E8366 /* FlySkyJoystickDevice.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +257,7 @@
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlySkyJoystick/FlySkyJoystick-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "FlySkyJoystick/FlySkyJoystick-Info.plist";
 				MODULE_NAME = com.hildskialf.osx.FlySkyJoystick;
 				MODULE_VERSION = 1.0.0d1;
@@ -252,7 +272,7 @@
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlySkyJoystick/FlySkyJoystick-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "FlySkyJoystick/FlySkyJoystick-Info.plist";
 				MODULE_NAME = com.hildskialf.osx.FlySkyJoystick;
 				MODULE_VERSION = 1.0.0d1;

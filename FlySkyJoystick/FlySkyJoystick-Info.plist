@@ -23,10 +23,33 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>IOKitPersonalities</key>
-	<dict/>
+	<dict>
+		<key>FlySkyJoystick</key>
+		<dict>
+			<key>IOUserClientClass</key>
+			<string>com_hlidskialf_osx_FlySkyJoystickUserClient</string>
+			<key>IOResourceMatch</key>
+			<string>IOKit</string>
+			<key>CFBundleIdentifier</key>
+			<string>com.hlidskialf.osx.FlySkyJoystick</string>
+			<key>IOMatchCategory</key>
+			<string>com_hlidskialf_osx_FlySkyJoystick</string>
+			<key>IOProviderClass</key>
+			<string>IOResources</string>
+			<key>IOKitDebug</key>
+			<integer>65535</integer>
+			<key>IOClass</key>
+			<string>com_hlidskialf_osx_FlySkyJoystick</string>
+		</dict>
+	</dict>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2013 __MyCompanyName__. All rights reserved.</string>
 	<key>OSBundleLibraries</key>
-	<dict/>
+	<dict>
+		<key>com.apple.kpi.iokit</key>
+		<string>11.4.2</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>11.4.2</string>
+	</dict>
 </dict>
 </plist>
