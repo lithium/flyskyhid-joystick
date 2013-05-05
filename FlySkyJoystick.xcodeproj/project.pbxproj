@@ -32,6 +32,15 @@
 		12A313B21735E75A008E8366 /* VHIDButtonCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A313AE1735E75A008E8366 /* VHIDButtonCollection.m */; };
 		12A313B31735E75A008E8366 /* VHIDPointerCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A313AF1735E75A008E8366 /* VHIDPointerCollection.h */; };
 		12A313B41735E75A008E8366 /* VHIDPointerCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A313B01735E75A008E8366 /* VHIDPointerCollection.m */; };
+		12A314491735ECE2008E8366 /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A3143B1735ECE2008E8366 /* AppDelegate.h */; };
+		12A3144A1735ECE2008E8366 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A3143C1735ECE2008E8366 /* AppDelegate.m */; };
+		12A3144B1735ECE2008E8366 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 12A3143D1735ECE2008E8366 /* Credits.rtf */; };
+		12A3144C1735ECE2008E8366 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12A3143F1735ECE2008E8366 /* InfoPlist.strings */; };
+		12A3144D1735ECE2008E8366 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12A314411735ECE2008E8366 /* MainMenu.xib */; };
+		12A3144E1735ECE2008E8366 /* FlySkyJoy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12A314431735ECE2008E8366 /* FlySkyJoy-Info.plist */; };
+		12A3144F1735ECE2008E8366 /* FlySkyJoy-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 12A314441735ECE2008E8366 /* FlySkyJoy-Prefix.pch */; };
+		12A314501735ECE2008E8366 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A314481735ECE2008E8366 /* main.m */; };
+		12A3145B1735ED80008E8366 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A3137C1735DE2C008E8366 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +76,15 @@
 		12A313AE1735E75A008E8366 /* VHIDButtonCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VHIDButtonCollection.m; path = FlySkyJoystick/VHIDButtonCollection.m; sourceTree = "<group>"; };
 		12A313AF1735E75A008E8366 /* VHIDPointerCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VHIDPointerCollection.h; path = FlySkyJoystick/VHIDPointerCollection.h; sourceTree = "<group>"; };
 		12A313B01735E75A008E8366 /* VHIDPointerCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VHIDPointerCollection.m; path = FlySkyJoystick/VHIDPointerCollection.m; sourceTree = "<group>"; };
+		12A3143B1735ECE2008E8366 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		12A3143C1735ECE2008E8366 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		12A3143E1735ECE2008E8366 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		12A314401735ECE2008E8366 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		12A314421735ECE2008E8366 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		12A314431735ECE2008E8366 /* FlySkyJoy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FlySkyJoy-Info.plist"; sourceTree = "<group>"; };
+		12A314441735ECE2008E8366 /* FlySkyJoy-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FlySkyJoy-Prefix.pch"; sourceTree = "<group>"; };
+		12A314481735ECE2008E8366 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12A314591735ED80008E8366 /* FlySkyJoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlySkyJoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +105,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		12A314561735ED80008E8366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12A3145B1735ED80008E8366 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -104,6 +130,7 @@
 			children = (
 				12A312381734C288008E8366 /* FlySkyJoystickDriver.kext */,
 				12A3137B1735DE2C008E8366 /* FlySkyJoystick.framework */,
+				12A314591735ED80008E8366 /* FlySkyJoy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				12A313731735DC5F008E8366 /* framework */,
+				12A3143A1735ECE2008E8366 /* FlySkyJoy */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -202,6 +230,29 @@
 			name = vhid;
 			sourceTree = "<group>";
 		};
+		12A3143A1735ECE2008E8366 /* FlySkyJoy */ = {
+			isa = PBXGroup;
+			children = (
+				12A3143B1735ECE2008E8366 /* AppDelegate.h */,
+				12A3143C1735ECE2008E8366 /* AppDelegate.m */,
+				12A314411735ECE2008E8366 /* MainMenu.xib */,
+				12A314541735ED0D008E8366 /* Supporting Files */,
+			);
+			path = FlySkyJoy;
+			sourceTree = "<group>";
+		};
+		12A314541735ED0D008E8366 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12A314431735ECE2008E8366 /* FlySkyJoy-Info.plist */,
+				12A3143F1735ECE2008E8366 /* InfoPlist.strings */,
+				12A314481735ECE2008E8366 /* main.m */,
+				12A3143D1735ECE2008E8366 /* Credits.rtf */,
+				12A314441735ECE2008E8366 /* FlySkyJoy-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -226,6 +277,8 @@
 				12A3139E1735E4E1008E8366 /* VHIDDevice.h in Headers */,
 				12A313B11735E75A008E8366 /* VHIDButtonCollection.h in Headers */,
 				12A313B31735E75A008E8366 /* VHIDPointerCollection.h in Headers */,
+				12A314491735ECE2008E8366 /* AppDelegate.h in Headers */,
+				12A3144F1735ECE2008E8366 /* FlySkyJoy-Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +322,23 @@
 			productReference = 12A3137B1735DE2C008E8366 /* FlySkyJoystick.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		12A314581735ED80008E8366 /* FlySkyJoy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12A3146E1735ED80008E8366 /* Build configuration list for PBXNativeTarget "FlySkyJoy" */;
+			buildPhases = (
+				12A314551735ED80008E8366 /* Sources */,
+				12A314561735ED80008E8366 /* Frameworks */,
+				12A314571735ED80008E8366 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlySkyJoy;
+			productName = FlySkyJoy;
+			productReference = 12A314591735ED80008E8366 /* FlySkyJoy.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -291,6 +361,7 @@
 			targets = (
 				12A312371734C288008E8366 /* FlySkyJoystickDriver */,
 				12A3137A1735DE2C008E8366 /* FlySkyJoystick */,
+				12A314581735ED80008E8366 /* FlySkyJoy */,
 			);
 		};
 /* End PBXProject section */
@@ -311,6 +382,17 @@
 			files = (
 				12A3138F1735E026008E8366 /* FlySkyJoystickDriver.kext in Resources */,
 				12A313861735DE2C008E8366 /* InfoPlist.strings in Resources */,
+				12A3144B1735ECE2008E8366 /* Credits.rtf in Resources */,
+				12A3144C1735ECE2008E8366 /* InfoPlist.strings in Resources */,
+				12A3144D1735ECE2008E8366 /* MainMenu.xib in Resources */,
+				12A3144E1735ECE2008E8366 /* FlySkyJoy-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12A314571735ED80008E8366 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +428,15 @@
 				12A3139F1735E4E1008E8366 /* VHIDDevice.m in Sources */,
 				12A313B21735E75A008E8366 /* VHIDButtonCollection.m in Sources */,
 				12A313B41735E75A008E8366 /* VHIDPointerCollection.m in Sources */,
+				12A3144A1735ECE2008E8366 /* AppDelegate.m in Sources */,
+				12A314501735ECE2008E8366 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12A314551735ED80008E8366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +457,30 @@
 				12A313851735DE2C008E8366 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		12A3143D1735ECE2008E8366 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12A3143E1735ECE2008E8366 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		12A3143F1735ECE2008E8366 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12A314401735ECE2008E8366 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		12A314411735ECE2008E8366 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12A314421735ECE2008E8366 /* en */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -476,6 +591,32 @@
 			};
 			name = Release;
 		};
+		12A3146F1735ED80008E8366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlySkyJoy/FlySkyJoy-Prefix.pch";
+				INFOPLIST_FILE = "FlySkyJoy/FlySkyJoy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		12A314701735ED80008E8366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlySkyJoy/FlySkyJoy-Prefix.pch";
+				INFOPLIST_FILE = "FlySkyJoy/FlySkyJoy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -504,6 +645,16 @@
 				12A3138D1735DE2C008E8366 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12A3146E1735ED80008E8366 /* Build configuration list for PBXNativeTarget "FlySkyJoy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12A3146F1735ED80008E8366 /* Debug */,
+				12A314701735ED80008E8366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
