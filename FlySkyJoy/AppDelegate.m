@@ -18,16 +18,16 @@
 {
     // Insert code here to initialize your application
     
-    m_MouseState    = [[VHIDDevice alloc] initWithType:VHIDDeviceTypeJoystick
+    m_HIDState    = [[VHIDDevice alloc] initWithType:VHIDDeviceTypeJoystick
                                           pointerCount:6
                                            buttonCount:2
                                             isRelative:YES];
-    NSLog(@"%@", m_MouseState);
-    m_VirtualMouse  = [[FlySkyJoystick alloc] initWithHIDDescriptor:[m_MouseState descriptor]
-                                                  productString:@"Virtual FlySky Joystick"];
+    NSLog(@"%@", m_HIDState);
+    m_VirtualJoystick  = [[FlySkyJoystick alloc] initWithHIDDescriptor:[m_HIDState descriptor]
+                                                  productString:@"FlySky Transmitter"];
     
-    [m_MouseState setDelegate:self];
-    if(m_VirtualMouse == nil || m_MouseState == nil)
+    [m_HIDState setDelegate:self];
+    if(m_VirtualJoystick == nil || m_HIDState == nil)
         NSLog(@"error");
     
 
@@ -46,7 +46,7 @@
 
 - (void)VHIDDevice:(VHIDDevice*)device stateChanged:(NSData*)state
 {
-    [m_VirtualMouse updateHIDState:state];
+    [m_VirtualJoystick updateHIDState:state];
 }
 
 - (void)newConnection:(NSNotification*)notification
@@ -127,9 +127,9 @@
             unsigned int ch5 = ((b[10]<<8)|b[11])-1000;
             unsigned int ch6 = ((b[12]<<8)|b[13])-1000;
             
-            [m_MouseState setPointer:0 position:NSMakePoint(ch1/1024.0,ch2/1024.0*-1)];
-            [m_MouseState setPointer:1 position:NSMakePoint(ch3/1024.0,ch4/1024.0*-1)];
-            [m_MouseState setPointer:2 position:NSMakePoint(ch5/1024.0,ch6/1024.0*-1)];
+            [m_HIDState setPointer:0 position:NSMakePoint(ch1/1024.0,ch2/1024.0*-1)];
+            [m_HIDState setPointer:1 position:NSMakePoint(ch3/1024.0,ch4/1024.0*-1)];
+            [m_HIDState setPointer:2 position:NSMakePoint(ch5/1024.0,ch6/1024.0*-1)];
         } else {
             NSLog(@"Chksum mismatch!");
         }

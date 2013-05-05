@@ -13,8 +13,8 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate,VHIDDeviceDelegate>
 {
     @private
-        VHIDDevice *m_MouseState;
-        FlySkyJoystick *m_VirtualMouse;
+        VHIDDevice *m_HIDState;
+        FlySkyJoystick *m_VirtualJoystick;
 
         NSFileHandle *m_UsbUart;
 }
