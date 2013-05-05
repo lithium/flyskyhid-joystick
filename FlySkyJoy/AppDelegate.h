@@ -16,7 +16,7 @@
         VHIDDevice *m_MouseState;
         FlySkyJoystick *m_VirtualMouse;
 
-    
+        NSFileHandle *m_UsbUart;
 }
 
 @property (assign) IBOutlet NSWindow *window;
