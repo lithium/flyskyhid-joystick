@@ -1,20 +1,25 @@
-#ifndef FlySkyJoystick_h
-#define FlySkyJoystick_h
+//
+//  FlySkyJoystick.h
+//  FlySkyJoystick
+//
+//  Created by Wiggins on 5/4/13.
+//  Copyright (c) 2013 __MyCompanyName__. All rights reserved.
+//
 
-#include <IOKit/IOService.h>
-#include "flyskyjoy_config.h"
+#import <Foundation/Foundation.h>
+#import "FlySkyDeviceImpl.h"
 
-class FlySkyJoystick : public IOService
+@interface FlySkyJoystick : NSObject
 {
-    OSDeclareDefaultStructors(FlySkyJoystick)
-public:
-    virtual bool start(IOService *provider);
-    
-    virtual bool handleOpen(
-                            IOService       *forClient,
-                            IOOptionBits     options,
-                            void            *arg);
-};
+@private
+    FlySkyDeviceImpl *m_Impl;
+}
 
++ (BOOL)prepare;
 
-#endif
+- (id)initWithHIDDescriptor:(NSData*)HIDDescriptor;
+- (id)initWithHIDDescriptor:(NSData*)HIDDescriptor productString:(NSString*)productString;
+
+- (BOOL)updateHIDState:(NSData*)HIDState;
+
+@end
