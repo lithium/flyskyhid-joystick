@@ -8,7 +8,7 @@
 
 #import "FlySkyDeviceImpl.h"
 
-#define WJoyDeviceDriverID @"com_hlidskialf_osx_FlySkyJoystick"
+#define FlySkyJoystickDeviceDriverID @"com_hlidskialf_osx_FlySkyJoystickDriver"
 
 @interface FlySkyDeviceImpl (PrivatePart)
 
@@ -113,7 +113,7 @@ static void onApplicationExit(void)
     
     if(IOServiceGetMatchingServices(
                                     kIOMasterPortDefault,
-                                    IOServiceMatching([WJoyDeviceDriverID UTF8String]),
+                                    IOServiceMatching([FlySkyJoystickDeviceDriverID UTF8String]),
                                     &iterator) != KERN_SUCCESS)
     {
         return result;

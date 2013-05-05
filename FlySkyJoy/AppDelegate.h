@@ -7,8 +7,17 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <FlySkyJoystick/VHIDDevice.h>
+#import <FlySkyJoystick/FlySkyJoystick.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate,VHIDDeviceDelegate>
+{
+    @private
+        VHIDDevice *m_MouseState;
+        FlySkyJoystick *m_VirtualMouse;
+
+    
+}
 
 @property (assign) IBOutlet NSWindow *window;
 

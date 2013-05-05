@@ -23,7 +23,7 @@
 		12A313901735E04D008E8366 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A312851734DF7B008E8366 /* IOKit.framework */; };
 		12A313951735E0A7008E8366 /* FlySkyDeviceImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A313931735E0A7008E8366 /* FlySkyDeviceImpl.h */; };
 		12A313961735E0A7008E8366 /* FlySkyDeviceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A313941735E0A7008E8366 /* FlySkyDeviceImpl.m */; };
-		12A3139E1735E4E1008E8366 /* VHIDDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A3139C1735E4E1008E8366 /* VHIDDevice.h */; };
+		12A3139E1735E4E1008E8366 /* VHIDDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A3139C1735E4E1008E8366 /* VHIDDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		12A3139F1735E4E1008E8366 /* VHIDDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A3139D1735E4E1008E8366 /* VHIDDevice.m */; };
 		12A313A11735E5F2008E8366 /* FlySkyJoystickDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A313A01735E592008E8366 /* FlySkyJoystickDriver.h */; };
 		12A313A21735E602008E8366 /* flyskyjoy_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A312811734D568008E8366 /* flyskyjoy_config.h */; };
@@ -46,6 +46,7 @@
 		12F75BE41735F5F100295A3D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12A314411735ECE2008E8366 /* MainMenu.xib */; };
 		12F75BE51735F5F100295A3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12A3143F1735ECE2008E8366 /* InfoPlist.strings */; };
 		12F75BE61735F5F100295A3D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 12A3143D1735ECE2008E8366 /* Credits.rtf */; };
+		12F75BFA1735F7EA00295A3D /* FlySkyJoystick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A3137B1735DE2C008E8366 /* FlySkyJoystick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F75BFA1735F7EA00295A3D /* FlySkyJoystick.framework in Frameworks */,
 				12A3145B1735ED80008E8366 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -31,15 +31,15 @@
 			<key>IOResourceMatch</key>
 			<string>IOKit</string>
 			<key>CFBundleIdentifier</key>
-			<string>com.hlidskialf.osx.FlySkyJoystick</string>
+			<string>com.hlidskialf.osx.FlySkyJoystickDriver</string>
 			<key>IOMatchCategory</key>
-			<string>com_hlidskialf_osx_FlySkyJoystick</string>
+			<string>com_hlidskialf_osx_FlySkyJoystickDriver</string>
 			<key>IOProviderClass</key>
 			<string>IOResources</string>
 			<key>IOKitDebug</key>
 			<integer>65535</integer>
 			<key>IOClass</key>
-			<string>com_hlidskialf_osx_FlySkyJoystick</string>
+			<string>com_hlidskialf_osx_FlySkyJoystickDriver</string>
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
