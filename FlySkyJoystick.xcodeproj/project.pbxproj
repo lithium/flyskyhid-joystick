@@ -41,7 +41,29 @@
 		12A3144F1735ECE2008E8366 /* FlySkyJoy-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 12A314441735ECE2008E8366 /* FlySkyJoy-Prefix.pch */; };
 		12A314501735ECE2008E8366 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A314481735ECE2008E8366 /* main.m */; };
 		12A3145B1735ED80008E8366 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A3137C1735DE2C008E8366 /* Cocoa.framework */; };
+		12F75BE21735F57D00295A3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A3143C1735ECE2008E8366 /* AppDelegate.m */; };
+		12F75BE31735F57D00295A3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A314481735ECE2008E8366 /* main.m */; };
+		12F75BE41735F5F100295A3D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12A314411735ECE2008E8366 /* MainMenu.xib */; };
+		12F75BE51735F5F100295A3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12A3143F1735ECE2008E8366 /* InfoPlist.strings */; };
+		12F75BE61735F5F100295A3D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 12A3143D1735ECE2008E8366 /* Credits.rtf */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		124844971735F3E400E8A69E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12A3122D1734C288008E8366 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12A312371734C288008E8366;
+			remoteInfo = FlySkyJoystickDriver;
+		};
+		124844991735F3E700E8A69E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12A3122D1734C288008E8366 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12A3137A1735DE2C008E8366;
+			remoteInfo = FlySkyJoystick;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		12A312381734C288008E8366 /* FlySkyJoystickDriver.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlySkyJoystickDriver.kext; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -333,6 +355,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				1248449A1735F3E700E8A69E /* PBXTargetDependency */,
+				124844981735F3E400E8A69E /* PBXTargetDependency */,
 			);
 			name = FlySkyJoy;
 			productName = FlySkyJoy;
@@ -393,6 +417,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F75BE41735F5F100295A3D /* MainMenu.xib in Resources */,
+				12F75BE51735F5F100295A3D /* InfoPlist.strings in Resources */,
+				12F75BE61735F5F100295A3D /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,10 +464,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F75BE21735F57D00295A3D /* AppDelegate.m in Sources */,
+				12F75BE31735F57D00295A3D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		124844981735F3E400E8A69E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12A312371734C288008E8366 /* FlySkyJoystickDriver */;
+			targetProxy = 124844971735F3E400E8A69E /* PBXContainerItemProxy */;
+		};
+		1248449A1735F3E700E8A69E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12A3137A1735DE2C008E8366 /* FlySkyJoystick */;
+			targetProxy = 124844991735F3E700E8A69E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		12A312401734C288008E8366 /* InfoPlist.strings */ = {

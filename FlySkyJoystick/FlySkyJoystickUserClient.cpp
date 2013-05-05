@@ -124,7 +124,7 @@ IOReturn FlySkyJoystickUserClient::externalMethod(
 
 
 
-bool FlySkyJoystickUserClient::openOwner(FlySkyJoystick *owner)
+bool FlySkyJoystickUserClient::openOwner(FlySkyJoystickDriver *owner)
 {
     if(owner == 0 || isInactive())
         return false;

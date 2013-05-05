@@ -54,7 +54,7 @@ private:
     OSString *m_DeviceProductString;
 
     
-    bool openOwner(FlySkyJoystick *owner);
+    bool openOwner(FlySkyJoystickDriver *owner);
     bool closeOwner();
     
     
