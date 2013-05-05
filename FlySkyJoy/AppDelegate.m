@@ -19,7 +19,7 @@
     // Insert code here to initialize your application
     
     m_HIDState    = [[VHIDDevice alloc] initWithType:VHIDDeviceTypeJoystick
-                                          pointerCount:6
+                                          pointerCount:3
                                            buttonCount:2
                                             isRelative:YES];
     NSLog(@"%@", m_HIDState);
@@ -88,8 +88,7 @@
     toptions.c_cflag &= ~(CSIZE | PARENB);
     toptions.c_cflag |= CS8;
     //
-    // One input byte is enough to return from read()
-    // Inter-character timer off
+    // read()s are immediate
     //
     toptions.c_cc[VMIN]  = 0;
     toptions.c_cc[VTIME] = 0;    
@@ -108,7 +107,10 @@
 }
 
 - (void)uartDataAvailable:(NSNotification *)note
-{    
+{
+    //flysky uart protocol
+    //http://www.rcgroups.com/forums/showpost.php?p=11384029&postcount=79
+    
     NSData *packet = [m_UsbUart readDataOfLength:18];    
     unsigned char *b =(unsigned char *)packet.bytes;
     
