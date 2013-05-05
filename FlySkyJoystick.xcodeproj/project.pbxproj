@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		12A312421734C288008E8366 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12A312401734C288008E8366 /* InfoPlist.strings */; };
-		12A312451734C288008E8366 /* FlySkyJoystick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12A312441734C288008E8366 /* FlySkyJoystick.cpp */; };
+		12A312451734C288008E8366 /* FlySkyJoystickDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12A312441734C288008E8366 /* FlySkyJoystickDriver.cpp */; };
 		12A3127B1734CD24008E8366 /* FlySkyJoystickUserClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A3127A1734CD24008E8366 /* FlySkyJoystickUserClient.h */; };
 		12A3127D1734CDAF008E8366 /* FlySkyJoystickUserClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12A3127C1734CDAF008E8366 /* FlySkyJoystickUserClient.cpp */; };
 		12A312801734D520008E8366 /* FlySkyJoystickDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A3127F1734D520008E8366 /* FlySkyJoystickDevice.h */; };
@@ -23,6 +23,15 @@
 		12A313901735E04D008E8366 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A312851734DF7B008E8366 /* IOKit.framework */; };
 		12A313951735E0A7008E8366 /* FlySkyDeviceImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A313931735E0A7008E8366 /* FlySkyDeviceImpl.h */; };
 		12A313961735E0A7008E8366 /* FlySkyDeviceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A313941735E0A7008E8366 /* FlySkyDeviceImpl.m */; };
+		12A3139E1735E4E1008E8366 /* VHIDDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A3139C1735E4E1008E8366 /* VHIDDevice.h */; };
+		12A3139F1735E4E1008E8366 /* VHIDDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A3139D1735E4E1008E8366 /* VHIDDevice.m */; };
+		12A313A11735E5F2008E8366 /* FlySkyJoystickDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A313A01735E592008E8366 /* FlySkyJoystickDriver.h */; };
+		12A313A21735E602008E8366 /* flyskyjoy_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A312811734D568008E8366 /* flyskyjoy_config.h */; };
+		12A313A31735E606008E8366 /* flyskyjoy_debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A3127E1734CFED008E8366 /* flyskyjoy_debug.h */; };
+		12A313B11735E75A008E8366 /* VHIDButtonCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A313AD1735E75A008E8366 /* VHIDButtonCollection.h */; };
+		12A313B21735E75A008E8366 /* VHIDButtonCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A313AE1735E75A008E8366 /* VHIDButtonCollection.m */; };
+		12A313B31735E75A008E8366 /* VHIDPointerCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A313AF1735E75A008E8366 /* VHIDPointerCollection.h */; };
+		12A313B41735E75A008E8366 /* VHIDPointerCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A313B01735E75A008E8366 /* VHIDPointerCollection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +39,7 @@
 		12A3123C1734C288008E8366 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
 		12A3123F1734C288008E8366 /* FlySkyJoystickDriver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlySkyJoystickDriver-Info.plist"; sourceTree = "<group>"; };
 		12A312411734C288008E8366 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		12A312431734C288008E8366 /* FlySkyJoystick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlySkyJoystick.h; sourceTree = "<group>"; };
-		12A312441734C288008E8366 /* FlySkyJoystick.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FlySkyJoystick.cpp; sourceTree = "<group>"; };
+		12A312441734C288008E8366 /* FlySkyJoystickDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FlySkyJoystickDriver.cpp; sourceTree = "<group>"; };
 		12A312461734C288008E8366 /* FlySkyJoystickDriver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlySkyJoystickDriver-Prefix.pch"; sourceTree = "<group>"; };
 		12A3127A1734CD24008E8366 /* FlySkyJoystickUserClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlySkyJoystickUserClient.h; sourceTree = "<group>"; };
 		12A3127C1734CDAF008E8366 /* FlySkyJoystickUserClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FlySkyJoystickUserClient.cpp; sourceTree = "<group>"; };
@@ -52,6 +60,13 @@
 		12A313891735DE2C008E8366 /* FlySkyJoystick.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FlySkyJoystick.m; path = FlySkyJoystick/FlySkyJoystick.m; sourceTree = "<group>"; };
 		12A313931735E0A7008E8366 /* FlySkyDeviceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlySkyDeviceImpl.h; path = FlySkyJoystick/FlySkyDeviceImpl.h; sourceTree = "<group>"; };
 		12A313941735E0A7008E8366 /* FlySkyDeviceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlySkyDeviceImpl.m; path = FlySkyJoystick/FlySkyDeviceImpl.m; sourceTree = "<group>"; };
+		12A3139C1735E4E1008E8366 /* VHIDDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VHIDDevice.h; path = FlySkyJoystick/VHIDDevice.h; sourceTree = "<group>"; };
+		12A3139D1735E4E1008E8366 /* VHIDDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VHIDDevice.m; path = FlySkyJoystick/VHIDDevice.m; sourceTree = "<group>"; };
+		12A313A01735E592008E8366 /* FlySkyJoystickDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlySkyJoystickDriver.h; sourceTree = "<group>"; };
+		12A313AD1735E75A008E8366 /* VHIDButtonCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VHIDButtonCollection.h; path = FlySkyJoystick/VHIDButtonCollection.h; sourceTree = "<group>"; };
+		12A313AE1735E75A008E8366 /* VHIDButtonCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VHIDButtonCollection.m; path = FlySkyJoystick/VHIDButtonCollection.m; sourceTree = "<group>"; };
+		12A313AF1735E75A008E8366 /* VHIDPointerCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VHIDPointerCollection.h; path = FlySkyJoystick/VHIDPointerCollection.h; sourceTree = "<group>"; };
+		12A313B01735E75A008E8366 /* VHIDPointerCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VHIDPointerCollection.m; path = FlySkyJoystick/VHIDPointerCollection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +132,8 @@
 		12A3123D1734C288008E8366 /* driver */ = {
 			isa = PBXGroup;
 			children = (
-				12A312431734C288008E8366 /* FlySkyJoystick.h */,
-				12A312441734C288008E8366 /* FlySkyJoystick.cpp */,
+				12A312441734C288008E8366 /* FlySkyJoystickDriver.cpp */,
+				12A313A01735E592008E8366 /* FlySkyJoystickDriver.h */,
 				12A3127A1734CD24008E8366 /* FlySkyJoystickUserClient.h */,
 				12A3127C1734CDAF008E8366 /* FlySkyJoystickUserClient.cpp */,
 				12A3127F1734D520008E8366 /* FlySkyJoystickDevice.h */,
@@ -157,6 +172,7 @@
 				12A313891735DE2C008E8366 /* FlySkyJoystick.m */,
 				12A313931735E0A7008E8366 /* FlySkyDeviceImpl.h */,
 				12A313941735E0A7008E8366 /* FlySkyDeviceImpl.m */,
+				12A313A41735E6B9008E8366 /* vhid */,
 				12A313821735DE2C008E8366 /* Supporting Files */,
 			);
 			name = framework;
@@ -173,6 +189,19 @@
 			path = FlySkyJoystick;
 			sourceTree = "<group>";
 		};
+		12A313A41735E6B9008E8366 /* vhid */ = {
+			isa = PBXGroup;
+			children = (
+				12A313AD1735E75A008E8366 /* VHIDButtonCollection.h */,
+				12A313AE1735E75A008E8366 /* VHIDButtonCollection.m */,
+				12A313AF1735E75A008E8366 /* VHIDPointerCollection.h */,
+				12A313B01735E75A008E8366 /* VHIDPointerCollection.m */,
+				12A3139C1735E4E1008E8366 /* VHIDDevice.h */,
+				12A3139D1735E4E1008E8366 /* VHIDDevice.m */,
+			);
+			name = vhid;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -182,6 +211,9 @@
 			files = (
 				12A3127B1734CD24008E8366 /* FlySkyJoystickUserClient.h in Headers */,
 				12A312801734D520008E8366 /* FlySkyJoystickDevice.h in Headers */,
+				12A313A11735E5F2008E8366 /* FlySkyJoystickDriver.h in Headers */,
+				12A313A21735E602008E8366 /* flyskyjoy_config.h in Headers */,
+				12A313A31735E606008E8366 /* flyskyjoy_debug.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +223,9 @@
 			files = (
 				12A3138E1735E000008E8366 /* FlySkyJoystick.h in Headers */,
 				12A313951735E0A7008E8366 /* FlySkyDeviceImpl.h in Headers */,
+				12A3139E1735E4E1008E8366 /* VHIDDevice.h in Headers */,
+				12A313B11735E75A008E8366 /* VHIDButtonCollection.h in Headers */,
+				12A313B31735E75A008E8366 /* VHIDPointerCollection.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12A312451734C288008E8366 /* FlySkyJoystick.cpp in Sources */,
+				12A312451734C288008E8366 /* FlySkyJoystickDriver.cpp in Sources */,
 				12A3127D1734CDAF008E8366 /* FlySkyJoystickUserClient.cpp in Sources */,
 				12A312831734D922008E8366 /* FlySkyJoystickDevice.cpp in Sources */,
 			);
@@ -308,6 +343,9 @@
 			files = (
 				12A3138A1735DE2C008E8366 /* FlySkyJoystick.m in Sources */,
 				12A313961735E0A7008E8366 /* FlySkyDeviceImpl.m in Sources */,
+				12A3139F1735E4E1008E8366 /* VHIDDevice.m in Sources */,
+				12A313B21735E75A008E8366 /* VHIDButtonCollection.m in Sources */,
+				12A313B41735E75A008E8366 /* VHIDPointerCollection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

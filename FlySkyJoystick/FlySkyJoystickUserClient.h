@@ -12,7 +12,7 @@
 #include <IOKit/IOUserClient.h>
 #include "flyskyjoy_config.h"
 
-class FlySkyJoystick;
+class FlySkyJoystickDriver;
 class FlySkyJoystickDevice;
 
 
@@ -49,7 +49,7 @@ private:
     static const IOExternalMethodDispatch   externalMethodDispatchTable[externalMethodCount];
 
     
-    FlySkyJoystick *m_Owner;
+    FlySkyJoystickDriver *m_Owner;
     FlySkyJoystickDevice *m_Device;
     OSString *m_DeviceProductString;
 

@@ -1,11 +1,11 @@
-#include "FlySkyJoystick.h"
+#include "FlySkyJoystickDriver.h"
 #include "flyskyjoy_debug.h"
 
 #define super IOService
 
-OSDefineMetaClassAndStructors(FlySkyJoystick, super)
+OSDefineMetaClassAndStructors(FlySkyJoystickDriver, super)
 
-bool FlySkyJoystick::start(IOService *provider)
+bool FlySkyJoystickDriver::start(IOService *provider)
 {
     if(!super::start(provider))
         return false;
@@ -15,7 +15,7 @@ bool FlySkyJoystick::start(IOService *provider)
     return true;
 }
 
-bool FlySkyJoystick::handleOpen(
+bool FlySkyJoystickDriver::handleOpen(
                             IOService       *forClient,
                             IOOptionBits     options,
                             void            *arg)

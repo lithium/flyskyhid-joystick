@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 __MyCompanyName__. All rights reserved.
 //
 
-#include "FlySkyJoystick.h"
+#include "FlySkyJoystickDriver.h"
 #include "FlySkyJoystickUserClient.h"
 #include "FlySkyJoystickDevice.h"
 #include "flyskyjoy_debug.h"
@@ -62,7 +62,7 @@ void FlySkyJoystickUserClient::free()
 
 bool FlySkyJoystickUserClient::start(IOService *provider)
 {
-    FlySkyJoystick *owner = OSDynamicCast(FlySkyJoystick, provider);
+    FlySkyJoystickDriver *owner = OSDynamicCast(FlySkyJoystickDriver, provider);
     if(owner == 0)
         return false;
     

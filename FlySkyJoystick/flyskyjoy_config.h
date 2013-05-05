@@ -9,7 +9,7 @@
 #ifndef FlySkyJoystick_flysky_config_h
 #define FlySkyJoystick_flysky_config_h
 
-#define FlySkyJoystick                  com_hlidskialf_osx_FlySkyJoystick
+#define FlySkyJoystickDriver            com_hlidskialf_osx_FlySkyJoystickDriver
 #define FlySkyJoystickDevice            com_hlidskialf_osx_FlySkyJoystickDevice
 #define FlySkyJoystickUserClient        com_hlidskialf_osx_FlySkyJoystickUserClient
 
