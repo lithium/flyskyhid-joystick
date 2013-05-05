@@ -153,7 +153,9 @@ static void onApplicationExit(void)
     if([self isDriverLoaded])
         return YES;
     
-    return [WJoyTool loadDriver];
+//    return [WJoyTool loadDriver];
+    return YES;
+
 }
 
 + (BOOL)unloadDriver
@@ -161,7 +163,8 @@ static void onApplicationExit(void)
     if(![self isDriverLoaded])
         return YES;
     
-    return [WJoyTool unloadDriver];
+//    return [WJoyTool unloadDriver];
+    return YES;
 }
 
 @end
