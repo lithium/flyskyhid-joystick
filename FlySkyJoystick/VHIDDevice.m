@@ -33,7 +33,7 @@
 
 - (id)init
 {
-    [[super init] release];
+//    [[super init] release];
     return nil;
 }
 
@@ -56,23 +56,23 @@
     
     if(m_Buttons  == nil || m_Pointers == nil)
     {
-        [self release];
+//        [self release];
         return nil;
     }
     
-    m_Descriptor = [[self createDescriptor] retain];
+    m_Descriptor = [self createDescriptor];
     
     return self;
 }
 
-- (void)dealloc
-{
-    [m_Buttons release];
-    [m_Pointers release];
-    [m_Descriptor release];
-    [m_State release];
-    [super dealloc];
-}
+//- (void)dealloc
+//{
+//    [m_Buttons release];
+//    [m_Pointers release];
+//    [m_Descriptor release];
+//    [m_State release];
+//    [super dealloc];
+//}
 
 - (VHIDDeviceType)type
 {
@@ -149,7 +149,7 @@
 
 - (NSData*)descriptor
 {
-    return [[m_Descriptor retain] autorelease];
+    return m_Descriptor;
 }
 
 - (NSData*)state
@@ -174,7 +174,7 @@
                [pointerState length]);
     }
     
-    return [[m_State retain] autorelease];
+    return m_State;
 }
 
 - (id<VHIDDeviceDelegate>)delegate
